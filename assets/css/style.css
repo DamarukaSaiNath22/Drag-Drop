@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #42a0db;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-bg: #171e1f;
+  --color-bg-board: #222526;
+}
+
+html,
+body {
+  color: #ccc;
+  font-family: Numito;
+  font-size: 100%;
+  font-family: "Nunito", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+.over {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgb(44, 72, 102, 0.9)
+  );
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.title {
+  color: wheat;
+  text-align: center;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+
+.boards {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.board {
+  width: 450px;
+  border-radius: 5px;
+  margin: 0 25px;
+  background-color: var(--color-bg-board);
+  border: 2px solid #333;
+}
+
+.board h3 {
+  margin: 0;
+  padding: 16px;
+  color: var(--color-primary);
+}
+
+.dropzone {
+  padding: 15px 0;
+  border-top: 1px solid #333;
+  min-height: 30px;
+  height: 70%;
+}
+
+.highlight {
+  background-color: #253033;
+}
+
+.is-current-zone {
+  background-color: #464d73;
+}
+
+.card {
+  width: 90%;
+  min-height: 20px;
+  margin: 0 auto;
+  border: 1px solid #514a4a;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #333;
+}
+
+.card:hover {
+  cursor: grabbing;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.2;
+}
+
+.card,
+.dropzone {
+  transition: 400ms;
+}
+.transition {
+  color: #000;
+  background-color: #ffffffe3;
+}

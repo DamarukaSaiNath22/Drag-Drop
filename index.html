@@ -1,0 +1,48 @@
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Drag And Drop</title>
+  <link rel="stylesheet" href="./assets/css/style.css" media="all" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,200;1,600;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="over">
+      <div class="container">
+        <h2 class="title">Drag Drop App</h2>
+        <div
+          style="display: flex; justify-content: center; align-items: center;"
+        >
+          <button
+            onclick="restore()"
+            style="
+              padding: 10px 15px;
+              font-size: 15px;
+              background-color: #f00;
+              color: #fff;
+            "
+          >
+            Reset
+          </button>
+        </div>
+        <div class="boards">
+          <div class="board cont1">
+            <h3>Container 1</h3>
+            <div class="dropzone">
+              <!-- A fazer -->
+            </div>
+          </div>
+          <div class="board cont2">
+            <h3>Container 2</h3>
+            <div class="dropzone">
+              <!-- Feito -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/tasks.js" type="application/javascript"></script>
+    <script src="./assets/js/drag.js" type="application/javascript"></script>
+    <script src="./assets/js/main.js" type="application/javascript"></script>
+  </body>
+</html>
